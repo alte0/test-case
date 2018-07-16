@@ -1,0 +1,40 @@
+{
+  "name": "SBP",
+  "version": "1.0.0",
+  "description": "Стартовый сборшик проектов",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "del": "^3.0.0",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-debug": "^3.2.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-glob": "^1.0.8",
+    "gulp-sass-variables": "^1.1.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-zip": "^4.1.0",
+    "imagemin-pngquant": "^5.0.1",
+    "jstransformer-uglify-js": "^1.2.0",
+    "node-normalize-scss": "^8.0.0",
+    "run-sequence": "^2.2.1",
+    "serve-favicon": "^2.4.5"
+  }
+}

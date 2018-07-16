@@ -1,0 +1,54 @@
+a {
+  -webkit-transition: color 300ms ease-in-out;
+  -moz-transition: color 300ms ease-in-out;
+  -ms-transition: color 300ms ease-in-out;
+  -o-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+table {
+  margin-bottom: 6 * $global-margin;
+}
+
+h1, h2 {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    background: $warning-color;
+    height: rem-calc(3);
+    width: 5rem;
+    left: 0;
+    right: 0;
+    bottom: -0.5rem;
+  }
+}
+
+@mixin position-center() {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.text-center h1, .text-center h2, h1.text-center, h2.text-center {
+  &:after {
+    @include position-center();
+  }
+}
+
+@include breakpoint(medium up) {
+  .medium-text-center h1, .medium-text-center h2, h1.medium-text-center, h2.medium-text-center {
+    &:after {
+      @include position-center();
+    }
+  }
+}
+
+@include breakpoint(large up) {
+  .large-text-center h1, .large-text-center h2, h1.large-text-center, h2.large-text-center {
+    &:after {
+      @include position-center();
+    }
+  }
+}
